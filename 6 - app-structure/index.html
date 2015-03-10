@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/genderController.js"></script>
+  <script src="app/directives/genderSelector.js"></script>
+  <script src="app/filters/vowelFilter.js"></script>
+  <title ng-bind="$state.current.name + ' - ui-router'">ui-router</title>ł
+</head>
+<body>
+<div class="container" role="main" style="margin-top: 60px;">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="jumbotron"  ui-view>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

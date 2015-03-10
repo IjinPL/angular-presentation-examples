@@ -1,0 +1,14 @@
+<label>Podaj swoje imię</label>
+<input class="form-control" type="text" ng-model="name"/>
+<h2>{{name}} to {{selectedGender}}</h2>
+
+<h5>Wybierz płeć:</h5>
+<div class="btn-group">
+  <button ng-repeat="(key, value) in genders"
+          type="button" class="btn btn-default"
+          ng-click="selectGender(key)"
+          ng-class="{'btn-primary': value==selectedGender}">
+    {{value}}
+  </button>
+</div>
+
